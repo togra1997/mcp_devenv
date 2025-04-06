@@ -1,0 +1,31 @@
+{
+  "name": "mcp",
+  "build": {
+    "dockerfile": "Dockerfile" // 相対パス表記
+  },
+  // VScodeの設定
+  "customizations": {
+    "vscode": {
+      // 拡張機能のインストール
+      "extensions": [],
+      // setting.jsonの設定
+      "settings": {
+        "mcp": {
+          "inputs": [],
+          "servers": {
+            "file_server": {
+              "command": "npx",
+              "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/workdir",
+                "/workspaces/mcp_test"
+              ],
+              "env": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
