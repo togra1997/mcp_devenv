@@ -1,0 +1,9 @@
+version: '0.1'
+services:
+  devapp:
+    build:
+      context: .
+      dockerfile: DockerFile
+    command: sleep infinity
+    volumes:
+      - "../:/workspace"

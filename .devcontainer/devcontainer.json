@@ -1,8 +1,8 @@
 {
   "name": "mcp",
-  "build": {
-    "dockerfile": "Dockerfile" // 相対パス表記
-  },
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devapp",
+  "workspaceFolder": "/workspace",
   // VScodeの設定
   "customizations": {
     "vscode": {
