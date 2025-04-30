@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "mcp": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/workspace",
+        ],
+        "env": {}
+      }
+    }
+  }
